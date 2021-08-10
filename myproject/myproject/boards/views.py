@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .forms import NewTopicForm
 from .models import Board, Topic, Post
 
+
 def home(request):
     boards = Board.objects.all()
     return render(request, 'home.html', {'boards': boards})
@@ -30,3 +31,6 @@ def new_topic(request, pk):
     else:
         form = NewTopicForm()
     return render(request, 'new_topic.html', {'board': board, 'form': form})
+
+def signup(request):
+    return render(request, 'signup.html')
