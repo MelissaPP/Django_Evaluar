@@ -1,1 +1,6 @@
-Primer repositorio de prueba de a Github
+El proyecto se realizo con el siguiente software: 
+
+Python 3.9.6
+Django 3.2.6
+Bootstrap 5
+JavaScript 3.6.0
